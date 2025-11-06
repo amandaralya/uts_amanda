@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Kopi Tuku</title>
+    <link rel="icon" href="tuku logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="uts.js"></script>
+</head>
+<body>
+<nav>
+  <div class="nav-logo">
+      <img src="tuku logo.png" alt="Tuku Coffee Logo">
+  </div>
+
+  <div class="nav-links">
+      <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+
+      <div class="dropdown">
+        <button class="dropbtn" type="button">
+          <i class="fa-solid fa-circle-info"></i> About <i class="fa-solid fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="sejarah.html">Sejarah</a>
+          <a href="visimisi.html">Visi & Misi</a>
+          <a href="suratkabar.html">Surat Kabar Tuku</a>
+        </div>
+      </div>
+
+      <a href="menu.html"><i class="fa-solid fa-utensils"></i> Menu</a>
+      <a href="location.html"><i class="fa-solid fa-location-dot"></i> Location</a>
+      <a href="gallery.html"><i class="fa-solid fa-image"></i> Gallery</a>
+      <a href="registration.html"><i class="fa-solid fa-pen-to-square"></i> Registration</a>
+      <a href="contact.html"><i class="fa-solid fa-phone"></i> Contact</a>
+  </div>
+</nav>
+    <header id="header">
+        <h1>Toko Kopi Tuku</h1>
+        <p>"Lahir karena Mimpi, Besar karena Tetangga"</p>
+    </header>
+
+  <button-mode onclick="toggledarkmode()">Dark Mode</button-mode>
+
+  <div style="margin-left: 30px;">
+    <h2>Jakarta, Indonesia</h2>
+    <span id="Jakarta"></span>
+  </div>
+
+  <script>
+    function updatetime() {
+    let now = new Date();
+    document.getElementById("Jakarta").innerText = now.toLocaleTimeString("id-ID", {timeZone: "Asia/Jakarta"});
+    }
+    setInterval(updatetime, 1000)
+    updatetime();
+  </script>
+
+  <div class="main">
+    <h1>"Spesialisasi Produk"</h1>
+    <hr>
+    <div class="foto">
+      <img src="Spesialisasi Produk.webp" alt="Spesialisasi Produk">
+      <p>Setiap kali sebuah produk TUKU dirilis, ada proses sunyi di belakangnya yang mungkin tidak pernah terlihat tetangga. Ada sesi mencoba berkali-kali, ada hitungan rasa yang terus diulang, dan ada rasa penasaran untuk mencari sesuatu yang baru dari bahan-bahan yang tumbuh di tanah Indonesia. Rasanya seperti sebuah perjalanan yang tidak pernah selesai — karena setiap varietas, setiap metode seduh, setiap olahan, selalu punya cerita rasa yang berbeda untuk dipelajari. Dari situlah eksplorasi dimulai: keinginan untuk menjawab pertanyaan sederhana tapi penuh imajinasi — “kalau begini rasanya jadi apa ya?”
+        <br>
+        <br>
+        Namun, eksplorasi saja tidak cukup. Sebuah rasa baru hanya akan punya makna kalau ia bisa diulang dan dijaga. TUKU memandang konsistensi sebagai bentuk perhatian pada tetangga. Karena kalau tetangga datang di hari Senin dan kembali di hari Jumat, rasa yang diterima harus tetap sama, tanpa perlu berharap-harap cemas. Stabilitas tidak membuat produk jadi membosankan — justru stabilitas memberi rasa tenang, seperti bertemu sesuatu yang familiar dan bisa diandalkan.
+        <br>
+        <br>
+        Dan antara keinginan untuk bereksperimen serta komitmen menjaga kualitas inilah keseimbangan produk TUKU dibangun. Tidak condong ke kiri atau ke kanan, tapi mencoba menciptakan ruang tengah yang sehat: ruang yang tetap membuka pintu untuk rasa baru, namun tidak mengorbankan pengalaman yang sudah dicintai.
+        <br>
+        <br>
+        Pada akhirnya, spesialisasi bukan soal menjadi paling rumit. Spesialisasi adalah keberanian untuk memilih fokus, mematangkan hal yang dipilih, dan merawatnya dengan sabar. Dari manisnya, pahitnya, hangatnya, sejuknya — semua rasa itu dipertemukan supaya tetangga bisa menikmati kopi dengan tenang, tanpa memikirkan teori apa pun di baliknya. Yang penting adalah: setiap gelas punya rasa yang tulus, punya rasa yang terjaga, dan punya rasa yang ingin kembali lagi.</p>
+      <button onclick="window.location.href='suratkabar.html'">Read Less</button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-social">
+    <p><strong>Jaga Ikatan Pertetanggaan!</strong></p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/tokokopituku/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com/channel/UCKiWd7KOrmQzY8vy2HTtgWg" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.linkedin.com/company/maka-id/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.tiktok.com/@tokokopituku" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+    </div>
+    <p>© 2025 Toko Kopi Tuku | UTS Amanda</p>
+    <p>Lahir karena Mimpi, Besar karena Tetangga</p>
+  </footer>
+</body>
+</html>

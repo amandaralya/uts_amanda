@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Kopi Tuku</title>
+    <link rel="icon" href="tuku logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="uts.js"></script>
+</head>
+<body>
+<nav>
+  <div class="nav-logo">
+      <img src="tuku logo.png" alt="Tuku Coffee Logo">
+  </div>
+
+  <div class="nav-links">
+      <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+
+      <div class="dropdown">
+        <button class="dropbtn" type="button">
+          <i class="fa-solid fa-circle-info"></i> About <i class="fa-solid fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="sejarah.html">Sejarah</a>
+          <a href="visimisi.html">Visi & Misi</a>
+          <a href="suratkabar.html">Surat Kabar Tuku</a>
+        </div>
+      </div>
+
+      <a href="menu.html"><i class="fa-solid fa-utensils"></i> Menu</a>
+      <a href="location.html"><i class="fa-solid fa-location-dot"></i> Location</a>
+      <a href="gallery.html"><i class="fa-solid fa-image"></i> Gallery</a>
+      <a href="registration.html"><i class="fa-solid fa-pen-to-square"></i> Registration</a>
+      <a href="contact.html"><i class="fa-solid fa-phone"></i> Contact</a>
+  </div>
+</nav>
+    <header id="header">
+        <h1>Toko Kopi Tuku</h1>
+        <p>"Lahir karena Mimpi, Besar karena Tetangga"</p>
+    </header>
+
+  <button-mode onclick="toggledarkmode()">Dark Mode</button-mode>
+
+  <div style="margin-left: 30px;">
+    <h2>Jakarta, Indonesia</h2>
+    <span id="Jakarta"></span>
+  </div>
+
+  <script>
+    function updatetime() {
+    let now = new Date();
+    document.getElementById("Jakarta").innerText = now.toLocaleTimeString("id-ID", {timeZone: "Asia/Jakarta"});
+    }
+    setInterval(updatetime, 1000)
+    updatetime();
+  </script>
+
+  <script>
+    alert("Welcome to Toko Kopi Tuku!")
+  </script>
+
+  <script>
+    let nama = prompt("Enter Your Name")
+    alert ("Hello, " + nama + "!")
+  </script>
+
+  <section id="home-section">
+    <div class="home-image">
+      <img src="toko tuku1.png" alt="Toko Tuku">
+      <img src="toko tuku2.png" alt="Toko Tuku">
+      <img src="toko tuku3.png" alt="Toko Tuku">
+      <img src="toko tuku4.png" alt="Toko Tuku">
+      <img src="toko tuku5.png" alt="Toko Tuku">
+      <img src="toko tuku6.png" alt="Toko Tuku">
+      <img src="toko tuku7.png" alt="Toko Tuku">
+      <img src="toko tuku8.png" alt="Toko Tuku">
+    </div>
+
+    <div class="home-content">
+      <h2>Selamat Datang Di Toko Kopi Tuku</h2>
+      <p>Ruang kecil yang mungkin terlihat sederhana, tapi menyimpan perjalanan rasa yang panjang — dimulai dari tanah di hulu, petani yang merawat setiap pohon dengan sabar, sampai akhirnya menjadi gelas kopi yang tetangga nikmati hari ini. Di sini, kopi bukan hanya tentang pilihan menu yang beragam, tapi tentang hubungan yang pelan-pelan tumbuh setiap hari: sapaan yang tidak pernah terburu-buru, percakapan ringan di depan kasir, sampai kebiasaan kembali ke rasa yang sudah familiar.
+        <br>
+        <br>
+        TUKU percaya bahwa kota yang sibuk pun butuh ruang yang pelan, tempat di mana tetangga bisa berhenti sejenak, menarik napas, dan menikmati momen yang tidak dikejar oleh waktu. Entah itu pagi yang penuh rencana, siang yang padat dengan pekerjaan, atau sore yang ingin dihabiskan dengan lebih santai — secangkir kopi bisa menjadi titik jeda yang membuat semuanya terasa lebih dekat dan lebih manusiawi.
+        <br>
+        <br>
+        Dan semua ini tidak berhenti di meja tetangga. Karena dari setiap tegukan yang nyaman, ada komitmen yang TUKU jaga: menjaga kualitas rasa agar tetap konsisten, menjelajahi kemungkinan baru melalui hasil bumi Indonesia, dan merawat hubungan—baik dengan tetangga yang datang setiap hari maupun petani yang menjadi awal dari semuanya. Kami percaya keberlanjutan bukan slogan besar, tapi pilihan kecil yang dilakukan terus menerus.
+        <br>
+        <br>
+        Jadi silakan masuk, pilih kopi favorit, dan temukan tempat duduk yang paling pas.
+        <br>
+        <br>
+        Toko Kopi Tuku hadir untuk menemani hari tetangga dengan sederhana — satu gelas kopi pada satu waktu — tapi dengan rasa yang ingin selalu kembali.
+      </p>
+
+      <div class="highlight-box">
+        <p>Lahir Karena Mimpi, Besar Karena Tetangga”
+            <br>
+            <br>
+            #BertetanggaBaik
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-social">
+    <p><strong>Jaga Ikatan Pertetanggaan!</strong></p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/tokokopituku/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com/channel/UCKiWd7KOrmQzY8vy2HTtgWg" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.linkedin.com/company/maka-id/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.tiktok.com/@tokokopituku" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+    </div>
+    <p>© 2025 Toko Kopi Tuku | UTS Amanda</p>
+    <p>Lahir karena Mimpi, Besar karena Tetangga</p>
+  </footer>
+</body>
+</html>

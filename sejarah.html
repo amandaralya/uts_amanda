@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Kopi Tuku</title>
+    <link rel="icon" href="tuku logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="uts.js"></script>
+</head>
+<body>
+<nav>
+  <div class="nav-logo">
+      <img src="tuku logo.png" alt="Tuku Coffee Logo">
+  </div>
+
+  <div class="nav-links">
+      <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+
+      <div class="dropdown">
+        <button class="dropbtn" type="button">
+          <i class="fa-solid fa-circle-info"></i> About <i class="fa-solid fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="sejarah.html">Sejarah</a>
+          <a href="visimisi.html">Visi & Misi</a>
+          <a href="suratkabar.html">Surat Kabar Tuku</a>
+        </div>
+      </div>
+
+      <a href="menu.html"><i class="fa-solid fa-utensils"></i> Menu</a>
+      <a href="location.html"><i class="fa-solid fa-location-dot"></i> Location</a>
+      <a href="gallery.html"><i class="fa-solid fa-image"></i> Gallery</a>
+      <a href="registration.html"><i class="fa-solid fa-pen-to-square"></i> Registration</a>
+      <a href="contact.html"><i class="fa-solid fa-phone"></i> Contact</a>
+  </div>
+</nav>
+    <header id="header">
+        <h1>Toko Kopi Tuku</h1>
+        <p>"Lahir karena Mimpi, Besar karena Tetangga"</p>
+    </header>
+
+  <button-mode onclick="toggledarkmode()">Dark Mode</button-mode>
+
+  <div style="margin-left: 30px;">
+    <h2>Jakarta, Indonesia</h2>
+    <span id="Jakarta"></span>
+  </div>
+
+  <script>
+    function updatetime() {
+    let now = new Date();
+    document.getElementById("Jakarta").innerText = now.toLocaleTimeString("id-ID", {timeZone: "Asia/Jakarta"});
+    }
+    setInterval(updatetime, 1000)
+    updatetime();
+  </script>
+
+  <div class="main" id="look">
+    <h1>Langkah Tuku (Sejarah)</h1>
+    <hr>
+    <p>Setiap bulan Juni selalu jadi pengingat perjalanan istimewa TUKU. Berawal dari toko sederhana di Cipete, kini TUKU hadir di berbagai kota hingga pernah membawa kehangatan bertetangga sampai ke manca negara. Dengan lebih dari 60 toko, barista siap menyambut Tetangga Tuku untuk #TUKUTIAPHARI.
+        <br>
+        <br>
+        Bertumbuh bukan hanya soal angka atau pencapaian, tapi tentang hadir untuk satu sama lain, saling jaga, dan saling bantu. Perjalanan 10 tahun ini mengajak kita untuk memaknai setiap sapa dan kebersamaan. Karena pada akhirnya, #BertetanggaBaik sama dengan menjadi manusia.
+        <br>
+        <br>
+        Harapannya sederhana, TUKU di setiap langkahnya bisa terus menghadirkan dampak baik yang berputar.
+        <br>
+        <br>
+        Mari rayakan umur baru dalam kehangatan penuh kebersamaan! Terima kasih sudah menemani perjalanan ini ya, Tetangga Tuku.
+        
+    <h1>Awal Cerita Bertetangga Di Cipete (2015)</h1>
+    <hr>
+  <div class="foto">
+    <img src="2015.webp" alt="Awal Cerita 2015">
+    <p>TUKU memulai perjalanannya di Jalan Cipete Raya No.7, memperkenalkan Es Kopi Susu Tetangga dengan semangat #BertetanggaBaik. Dari sebuah titik kecil itulah TUKU pertama kali belajar menyapa lewat secangkir kopi — bukan sebagai “brand besar”, tapi sebagai tetangga yang kebetulan jago bikin minuman nyaman buat diminum tiap hari.
+        Di sana, senyum barista, obrolan selintas di depan bar, dan bunyi mesin espresso yang sibuk tiap pagi jadi bagian dari ritme harian. Kopi bukan cuma “produk” — tapi jembatan untuk menjadi dekat: dekat dengan pelanggan, dekat dengan lingkungan, dekat dengan cerita yang datang silih berganti. Semangat #BertetanggaBaik bukan hanya tagline, tapi cara TUKU menempatkan diri: selalu hadir, selalu merunduk, selalu ingin jadi tempat singgah yang hangat tanpa pernah sok tahu tentang apa yang orang lain harus suka.
+  </div>
+    <h1>Langkah-Langkah Kecil Ciptakan Konsistensi (2016)</h1>
+    <hr>
+  <div class="foto">
+    <img src="2016.webp" alt="Langkah Tuku">
+    <p>Demi menjaga standar kualitas, TUKU membangun warehouse dan roastery sendiri. Mengolah biji kopi terbaik secara mandiri untuk menjaga cita rasa yang konsisten. Karena di TUKU, urusan rasa bukan sekadar soal “pakai bahan bagus”, tapi bagaimana cara memperlakukannya — dari pemilihan green bean, proses roasting, hingga bagaimana setiap batch disiapkan supaya esoknya bisa tetap terasa seperti “TUKU yang kita kenal”.
+        Dengan mengelola semuanya secara internal, TUKU bisa memastikan bahwa setiap cangkir yang keluar — baik itu dinikmati di Cipete, di cabang lain, atau bahkan dibawa pulang — tetap memiliki karakter yang sama: bersih, ramah, dan bisa dinikmati tanpa perlu banyak menjelaskan teknisnya. Roastery bukan hanya “pabrik kopi” bagi TUKU, tapi jantung yang menafaskan konsistensi: tempat di mana kopi diperlakukan dengan penuh keseriusan, supaya pelanggan nggak perlu repot memikirkannya.</p>
+  </div>
+  <h1>Pijakan Baru di Tengah Hiruk Pikuk Pasar Santa (2017)</h1>
+  <hr>
+  <div class="foto">
+    <img src="2017.webp" alt="Santa">
+    <p>Tahun ini juga menjadi tonggak penting dengan dibukanya TUKU Pasar Santa sebagai toko grab-and-go pertama tanpa bangku. Di sini, TUKU kembali menguji satu ide sederhana: bahwa kopi yang enak itu nggak harus selalu dilampirkan dengan kursi nyaman dan waktu lama. Kadang, orang hanya ingin mampir sebentar, beli kopi, dan lanjut hidup.
+        Pasar Santa menjadi eksperimen nyata untuk itu — sebuah toko kecil yang fokus pada ritme cepat, antrian padat, dan arus pelanggan yang hanya singgah sekejap. Tanpa bangku, tanpa banyak ornamen. Tapi justru di kesederhanaan itu, muncul kehangatan baru: tatap muka yang singkat, percakapan 10 detik di depan jendela, dan senyum yang muncul spontan begitu kopi dititipkan ke tangan.
+        Konsep grab-and-go ala TUKU ini bukan sekadar bentuk gerai — tapi cara pandang: bahwa “ngopi” tidak selalu harus diperlambat, dan bahwa TUKU ingin hadir di berbagai ritme hidup, termasuk ritme yang tergesa.</p>
+  </div>
+  <h1>Beribu Cerita Baik bersama #TetanggaTuku di BSD (2018)</h1>
+  <hr>
+  <div class="foto">
+    <img src="2018.webp" alt="Tuku BSD">
+    <p>Ekspansi ke luar Jakarta dimulai dengan menyapa #TetanggaTuku BSD di Tangerang Selatan. Langkah ini bukan hanya soal membuka cabang baru, tapi tentang membawa cara TUKU bertetangga ke lingkungan yang berbeda — ritme baru, wajah baru, dan cerita baru yang nanti akan ikut membentuk perjalanan TUKU.
+        BSD menjadi bukti bahwa nilai “kopi sehari-hari yang tulus” bukan hanya relevan di kota besar dan padat seperti Jakarta, tapi juga bisa tumbuh di area yang lebih terencana, lebih rapi, dan lebih “suburban”. Dari sana TUKU belajar bahwa kedekatan bukan soal jarak — tapi soal cara menyapa dan cara hadir.
+        Di BSD, TUKU kembali jadi tetangga, bukan sekadar merek yang datang membawa poster. TUKU datang dengan bahasa yang sama: senyum, sapaan, dan kopi yang bisa dinikmati tanpa banyak pertimbangan.
+  </div>
+    <h1>BERAGAM Lahir, Membawa Kearifan Kopi & Gula Aren Indonesia (2019)</h1>
+    <hr>
+  <div class="foto">
+    <img src="2019.webp" alt="2019 gula aren">
+    <p>Divisi Roastery TUKU kemudian berkembang menjadi PT. Berangan Ragam Rasa, anak perusahaan resmi dari TUKU. Langkah ini bukan sekadar perubahan nama atau struktur organisasi — tapi bentuk pernyataan yang lebih tegas tentang arah yang ingin TUKU pegang: kualitas bukan sesuatu yang sekadar “diusahakan setiap hari”, tapi sesuatu yang harus dibangun dengan pondasi yang jelas, rapi, dan punya pijakan legal yang kuat.
+        Dengan berdirinya PT. Berangan Ragam Rasa, seluruh proses pemilihan green bean, roasting, quality control, hingga penyediaan aren — kini berada di bawah entitas yang fokus penuh pada rasa. Ini membantu TUKU menjaga konsistensi cita rasa dari waktu ke waktu, meskipun volume dan jangkauan bertambah. Karena baik kopi maupun aren, keduanya sama-sama punya karakter yang tidak bisa dianggap remeh: ada musim, ada lot, ada variabel alam — semuanya harus disikapi dengan disiplin dan rasa hormat pada proses.</p>
+  </div>
+    <h1>Salam Hangat untuk Tetangga Terdekat, Sapa Dengan Rasa (2020)</h1>
+    <hr>
+  <div class="foto">
+    <img src="2020.webp" alt="tetangga tuku">
+    <p>TUKU juga berkolaborasi dengan POS Indonesia untuk menghadirkan Sapa Dengan Rasa, minuman siap seduh yang mudah untuk tetangga nikmati di rumah. Kolaborasi ini bukan hanya tentang produk baru, tapi tentang membawa rasa “saling menyapa” ke jarak yang lebih jauh — lewat jaringan kirim POS yang sudah puluhan tahun menemani masyarakat Indonesia.
+        Sapa Dengan Rasa memungkinkan kopi dan aren ala TUKU hadir di ruang keluarga, di meja kerja, atau bahkan di kota yang belum ada gerai TUKU-nya. Karena pada akhirnya, yang ingin dibawa bukan sekadar botol atau kemasan — tapi pengalaman menyeduh rasa yang sudah akrab, tanpa perlu antri, tanpa perlu keluar rumah.</p>
+  </div>
+  <h1>Ikut Serta di Ajang Internasional Sherpa G20 Indonesia (2021)</h1>
+  <hr>
+  <div class="foto">
+    <img src="2021.webp" alt="Ajang Intenasional">
+    <p>TUKU juga berkesempatan untuk menyajikan cita rasa kopi Indonesia di acara Sherpa G20 Indonesia. Momen ini menjadi salah satu titik yang menguatkan keyakinan bahwa kopi Indonesia — ketika dirawat dengan sungguh-sungguh dan disajikan dengan niat yang baik — punya tempat di panggung yang lebih luas, bahkan di ruang yang mempertemukan banyak negara sekaligus.
+        Bukan dalam rangka untuk “pamer”, tapi lebih sebagai bentuk kontribusi kecil: menunjukkan bahwa kekayaan rasa Nusantara bisa hadir dalam format yang ramah, accessible, dan dinikmati oleh siapa saja — dari diplomat, delegasi, hingga staf yang bekerja di balik layar perhelatan tersebut.
+        Melalui kesempatan ini, TUKU belajar bahwa cara menyapa tetangga itu ternyata tidak selalu hanya melalui jendela kedai — kadang melalui meja konferensi, ruang diskusi internasional, dan secangkir kopi yang dibagikan di sela agenda yang padat.</p>
+  </div>
+  <h1>TOSERBAKU Hadir untuk Kebutuhan Sehari-hari Tetangga (2022)</h1>
+  <hr>
+  <div class="foto">
+    <img src="2022.webp" alt="Toserbaku">
+    <p>Memperkenalkan TOSERBAKU atau Toko Serba Tuku tepat di tanggal 17 Agustus 2022 sebagai unit bisnis retail yang berfokus pada cendera mata punya #TetanggaTuku. Pemilihan tanggal 17 Agustus tentu bukan tanpa makna — ada semangat merayakan Indonesia, tetapi juga ada semangat untuk menandai sesuatu yang ‘baru’ di dalam perjalanan TUKU.
+        Melalui TOSERBAKU, TUKU ingin membuka ruang lain yang tetap selaras dengan nilai awalnya: kedekatan. Kalau kedainya menyajikan kopi, maka TOSERBAKU mencoba merawat kenangan — kenangan rasa, kenangan suasana, dan kenangan menjadi bagian dari ekosistem kecil yang selama ini tumbuh bersama tetangga.</p>
+  </div>
+      <h1>Kolaborasi Seru dengan Disney Pixar yang Munculkan Nostalgia bersama Tetangga (2023)</h1>
+    <hr>
+  <div class="foto">
+    <img src="2023.webp" alt="Kolaborasi">
+    <p>Awal tahun 2023 diwarnai dengan koleksi cendera mata TUKU bersama Disney Pixar, tidak hanya untuk #TetanggaTuku, tetapi juga untuk #TetanggaTukuKecil. Kolaborasi ini terasa spesial karena bukan hanya menghadirkan memorabilia yang lucu dan menggemaskan, tetapi juga membuka pintu bagi generasi yang lebih muda untuk merasakan kedekatan yang selama ini TUKU bangun.
+        Melalui kolaborasi ini, TUKU ingin menunjukkan bahwa rasa bertetangga itu bisa lintas usia — bahwa kehangatan kopi, suasana kedai, dan nilai “ramah dan sederhana” itu bisa dihadirkan juga lewat dunia imajinasi yang ceria dan menyenangkan. Disney Pixar membantu TUKU memperkaya cara menyapa: bukan hanya lewat rasa dan aroma, tapi juga lewat karakter, warna, dan ilustrasi yang akrab di hati banyak keluarga.</p>
+  </div>
+  <h1>Annyeong Haseo! Pop-up TUKU di Seoul (2024)</h1>
+  <hr>
+  <div class="foto">
+    <img src="2024.webp" alt="Seoul">
+    <p>TUKU menyapa #TetanggaTuku Seoul di Global Pop-up Store pertama untuk memperkenalkan cita rasa Nusantara Indonesia ke luar negeri. Momen ini terasa seperti membuka halaman baru — bukan hanya soal “TUKU hadir di negara lain”, tapi tentang membawa rasa rumah ke kota yang punya ritme, budaya, dan kebiasaan yang sama sekali berbeda.
+        Di Seoul, TUKU belajar menjadi “tetangga baru” di lingkungan yang jauh dari Cipete — namun tetap berpegang pada nilai yang sama: menyajikan rasa yang jujur, apa adanya, tanpa perlu berkompromi dengan identitas. Pop-up ini menjadi ruang perkenalan, ruang dialog, dan ruang untuk membuktikan bahwa kopi Indonesia mampu berdiri dengan karakternya sendiri, bahkan di pasar global yang sangat selektif.
+        Melalui pop-up ini, TUKU tidak hanya menjual kopi — tapi memperkenalkan cerita di baliknya:
+  </div>
+  <h1>Stasiun Berikutnya… Cipete Raya TUKU (2025)</h1>
+  <hr>
+  <div class="foto">
+    <img src="2025.webp" alt="Toserbaku">
+    <p>Stasiun MRT Cipete Raya resmi berganti nama menjadi Cipete Raya TUKU, sebagai simbol titik awal di mana cerita TUKU bermula. Momen ini terasa seperti lingkaran yang kembali bertemu ujungnya: sebuah pengakuan kecil atas perjalanan yang dimulai dari sudut sederhana, lalu perlahan tumbuh menjadi cerita yang kini dirayakan bersama lebih banyak tetangga.
+        Nama di pintu stasiun itu bukan tentang kebesaran brand — namun lebih tentang merayakan sebuah memori kecil yang kini menjadi bagian dari banyak langkah: mereka yang dulu mampir sekadar beli Es Kopi Susu Tetangga sebelum kerja, mereka yang saling berpapasan dalam antrian, hingga mereka yang mengenal TUKU sebagai “kedai favorit di sudut Cipete”.
+        Semoga di tahun-tahun mendatang, TUKU bisa menghadirkan lebih banyak cerita #BertetanggaBaik — cerita yang jujur, dekat, dan membuat setiap tegukan terasa punya alasan untuk diulang.
+        Karena perjalanan ini belum selesai.
+        Dan setiap tetangga baru selalu membawa bab baru untuk ditulis bersama.</p>
+  </div>
+    </div>
+
+  <footer>
+    <div class="footer-social">
+    <p><strong>Jaga Ikatan Pertetanggaan!</strong></p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/tokokopituku/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com/channel/UCKiWd7KOrmQzY8vy2HTtgWg" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.linkedin.com/company/maka-id/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.tiktok.com/@tokokopituku" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+    </div>
+    <p>© 2025 Toko Kopi Tuku | UTS Amanda</p>
+    <p>Lahir karena Mimpi, Besar karena Tetangga</p>
+  </footer>
+</body>
+</html>

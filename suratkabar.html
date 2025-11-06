@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Kopi Tuku</title>
+    <link rel="icon" href="tuku logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="uts.js"></script>
+</head>
+<body>
+<nav>
+  <div class="nav-logo">
+      <img src="tuku logo.png" alt="Tuku Coffee Logo">
+  </div>
+
+  <div class="nav-links">
+      <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+
+      <div class="dropdown">
+        <button class="dropbtn" type="button">
+          <i class="fa-solid fa-circle-info"></i> About <i class="fa-solid fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="sejarah.html">Sejarah</a>
+          <a href="visimisi.html">Visi & Misi</a>
+          <a href="suratkabar.html">Surat Kabar Tuku</a>
+        </div>
+      </div>
+
+      <a href="menu.html"><i class="fa-solid fa-utensils"></i> Menu</a>
+      <a href="location.html"><i class="fa-solid fa-location-dot"></i> Location</a>
+      <a href="gallery.html"><i class="fa-solid fa-image"></i> Gallery</a>
+      <a href="registration.html"><i class="fa-solid fa-pen-to-square"></i> Registration</a>
+      <a href="contact.html"><i class="fa-solid fa-phone"></i> Contact</a>
+  </div>
+</nav>
+    <header id="header">
+        <h1>Toko Kopi Tuku</h1>
+        <p>"Lahir karena Mimpi, Besar karena Tetangga"</p>
+    </header>
+
+  <button-mode onclick="toggledarkmode()">Dark Mode</button-mode>
+
+  <div style="margin-left: 30px;">
+    <h2>Jakarta, Indonesia</h2>
+    <span id="Jakarta"></span>
+  </div>
+
+  <script>
+    function updatetime() {
+    let now = new Date();
+    document.getElementById("Jakarta").innerText = now.toLocaleTimeString("id-ID", {timeZone: "Asia/Jakarta"});
+    }
+    setInterval(updatetime, 1000)
+    updatetime();
+  </script>
+
+    <div class="main">
+        <h1>"Bertetangga Baik"</h1>
+        <hr>
+        <div class="foto">
+          <img src="Bertetangga Baik.webp" alt="Bertetangga Baik">
+          <p>Bertemu tetangga adalah kejadian sehari-hari yang sering tidak disadari bisa membawa kehangatan. Kadang hanya senyum kecil ketika berpapasan, atau sapaan singkat saat beli sarapan di warung sebelah, rasanya sudah cukup membuat pagi terasa lebih hidup. Di tengah rutinitas yang padat, momen kecil semacam itu terasa penting, karena justru di situlah hubungan terbangun.
+            <br>
+            <br>
+            Sesederhana berhenti sebentar untuk menyapa, mengobrol ringan sambil tertawa, atau ikut meramaikan kumpul RT yang santai. Dari situ perlahan kita belajar bahwa bertetangga bukan hanya soal tinggal bersebelahan, tapi juga saling mengenal dan menjaga rasa. Pelan-pelan, kebiasaan sederhana bisa berubah menjadi kebersamaan yang tumbuh alami.</p>
+        <button onclick="window.location.href='berita1.html'">Read More</button>
+        </div>
+        <h1>"Spesialisasi Produk"</h1>
+        <hr>
+        <div class="foto">
+            <img src="Spesialisasi Produk.webp" alt="Spesialisasi Produk">
+            <p>Setiap produk di TUKU lahir dari dorongan untuk tidak berhenti penasaran pada rasa. Ada keinginan untuk menggali bahan dari bumi Indonesia, mencoba, menakar, dan mencari kemungkinan baru yang bisa jadi pengalaman minum kopi yang lebih nyaman. Tapi di saat yang sama, TUKU juga percaya bahwa rasa yang terjaga dan tidak berubah dari hari ke hari justru jadi alasan kenapa tetangga bisa kembali tanpa ragu.
+                <br>
+                <br>
+                Eksplorasi dan konsistensi ini berjalan berdampingan. Satu membuka ruang untuk menemukan sesuatu yang segar, satu menjaga kepercayaan agar setiap gelas terasa stabil. Keduanya saling melengkapi sampai akhirnya menjadi keseimbangan produk — rasa yang tidak hanya enak, tapi punya karakter yang bisa diingat dan dipercaya.
+            </p>
+            <button onclick="window.location.href='berita2.html'">Read More</button>
+        </div>
+        <h1 id="a3">"Rantai Keberlanjutan"</h1>
+        <hr>
+        <div class="foto">
+            <img src="Rantai Keberlanjutan.webp" alt="Rantai Keberlanjutan">
+            <p>Keberlanjutan di TUKU bukan hanya soal memakai kata “sustainable” sebagai label, tapi tentang bagaimana setiap langkah yang dilakukan hari ini bisa punya dampak yang terasa beberapa tahun ke depan. Semua dimulai dari petani di hulu — orang-orang yang setiap hari berdiri paling dekat dengan tanah, menanam dan merawat pohon yang kelak jadi awal secangkir kopi. Dari mereka, cerita tentang rasa dimulai. Dan ketika kopi itu bergerak turun ke kota, berpindah tangan ke roaster, barista, dan akhirnya ke tetangga di hilir, kita percaya ada tanggung jawab yang ikut bergerak di dalamnya.
+                <br>
+                <br>
+                Karena itu TUKU berupaya untuk tidak berhenti pada penyajian produk saja. Ada usaha untuk membuat gerakan — mengajak kembali memperhatikan limbah, mendaur ulang, meng-upcycle, merawat komunitas, dan memberi ruang bagi kegotongroyongan. Langkah-langkah kecil ini mungkin terlihat sepele, tapi kalau dilakukan bersama, punya kekuatan untuk membawa perubahan nyata. Harapannya, ekosistem sirkuler ini bisa terus hidup: dari petani, kembali ke tetangga, dan akhirnya kembali lagi ke hulu dengan nilai yang lebih baik.
+            </p>
+            <button onclick="window.location.href='berita3.html'">Read More</button>
+        </div>
+    </div>
+
+  <footer>
+    <div class="footer-social">
+    <p><strong>Jaga Ikatan Pertetanggaan!</strong></p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/tokokopituku/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com/channel/UCKiWd7KOrmQzY8vy2HTtgWg" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.linkedin.com/company/maka-id/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.tiktok.com/@tokokopituku" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+    </div>
+    <p>© 2025 Toko Kopi Tuku | UTS Amanda</p>
+    <p>Lahir karena Mimpi, Besar karena Tetangga</p>
+  </footer>
+</body>
+</html>

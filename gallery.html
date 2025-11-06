@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Kopi Tuku</title>
+    <link rel="icon" href="tuku logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="uts.js"></script>
+</head>
+<body>
+<nav>
+  <div class="nav-logo">
+      <img src="tuku logo.png" alt="Tuku Coffee Logo">
+  </div>
+
+  <div class="nav-links">
+      <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+
+      <div class="dropdown">
+        <button class="dropbtn" type="button">
+          <i class="fa-solid fa-circle-info"></i> About <i class="fa-solid fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="sejarah.html">Sejarah</a>
+          <a href="visimisi.html">Visi & Misi</a>
+          <a href="suratkabar.html">Surat Kabar Tuku</a>
+        </div>
+      </div>
+
+      <a href="menu.html"><i class="fa-solid fa-utensils"></i> Menu</a>
+      <a href="location.html"><i class="fa-solid fa-location-dot"></i> Location</a>
+      <a href="gallery.html"><i class="fa-solid fa-image"></i> Gallery</a>
+      <a href="registration.html"><i class="fa-solid fa-pen-to-square"></i> Registration</a>
+      <a href="contact.html"><i class="fa-solid fa-phone"></i> Contact</a>
+  </div>
+</nav>
+
+    <header id="header">
+        <h1>Toko Kopi Tuku</h1>
+        <p>"Berangan, Berkarya, Bertumbuh, Bersama Tuku."</p>
+    </header>
+
+  <button-mode onclick="toggledarkmode()">Dark Mode</button-mode>
+
+  <div style="margin-left: 30px;">
+    <h2>Jakarta, Indonesia</h2>
+    <span id="Jakarta"></span>
+  </div>
+
+  <script>
+    function updatetime() {
+    let now = new Date();
+    document.getElementById("Jakarta").innerText = now.toLocaleTimeString("id-ID", {timeZone: "Asia/Jakarta"});
+    }
+    setInterval(updatetime, 1000)
+    updatetime();
+  </script>
+
+    <section class="box">
+        <h2>See What’s Brewing at Tuku</h2>
+    </section>
+
+    <section class="gallery">
+      <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="Ulang Tahun ke-9.webp" alt="Ulang Tahun Ke-9">
+        <h3>Ulang Tahun Ke-9</h3>
+        <p>Merayakan 9 tahun perjalanan penuh rasa bersama komunitas Tetangga Tuku! 🎉 Acara ulang tahun ke-9 ini menghadirkan keceriaan, dekorasi spesial, dan hadiah untuk para pelanggan setia. Suasana hangat dan kebersamaan menjadi inti dari momen istimewa ini — sebagai wujud terima kasih atas dukungan yang terus mengalir selama hampir satu dekade</p>
+      </div>
+      <div class="gallery-item">
+        <img src="Sapa Barista Lama..jpg" alt="Sapa Barista Lama">
+        <h3>Sapa Barista Lama</h3>
+        <p>Acara ‘Sapa Barista Lama’ ini menjadi tonggak penghargaan bagi para barista yang telah menjadi bagian dari keluarga Tuku sejak awal. Dengan suasana penuh nostalgia, para barista lama kembali berkumpul, berbagi kisah, dan berjumpa dengan kolega-baru. Momen hangat ini menguatkan rasa kebersamaan dan menghormati perjalanan panjang mereka.</p>
+      </div>
+      <div class="gallery-item">
+        <img src="Bertamu Ke Bandung.webp" alt="Bertamu Ke Bandung">
+        <h3>Bertamu Ke Bandung</h3>
+        <p>Kegiatan ‘Bertamu ke Bandung’ mengajak tim Tuku untuk menjelajah, belajar, dan bertukar inspirasi di kota Bandung. Acara ini tak hanya wisata kopi—tapi juga momen bonding, kunjungan ke toko-toko, dan berbagi pengalaman dengan komunitas lokal. Langkah ini memperluas cakrawala dan mempererat jaringan antar kota.</p>
+    </div>
+      <div class="gallery-item">
+        <img src="Jelajah Cipete.webp" alt="Jelajah Cipete">
+        <h3>Jelajah Cipete</h3>
+        <p>‘Jelajah Cipete’ adalah aktivitas komunitas di mana Tetangga Tuku bersama-sama mengeksplorasi kawasan Cipete. Mulai dari toko-toko lokal hingga spot kopi tersohor, acara ini dirancang untuk memperkuat tali persaudaraan, mengenalkan lingkungan sekitar, serta merayakan budaya kopi dalam format santai dan interaktif.</p>
+      </div>
+      <div class="gallery-item">
+        <img src="Kumpul Tetangga Tuku.webp" alt="Kumpul Tetangga Tuku">
+        <h3>Kumpul Tetangga Tuku</h3>
+        <p>Acara ‘Kumpul Tetangga Tuku’ menjadi wadah bagi komunitas pecinta Tuku untuk berkumpul, berbagi cerita, dan menikmati kopi bersama. Dengan suasana akrab dan penuh tawa, kegiatan ini memperkuat semangat menjadi ‘tetangga’—bukan hanya pelanggan, tetapi bagian dari keluarga besar Tuku.</p>
+      </div>
+      <div class="gallery-item">
+        <img src="Ulang Tahun Toserbaku.webp" alt="Ulang Tahun Toserbaku">
+        <h3>Ulang Tahun Toserbaku</h3>
+        <p>Merayakan ulang tahun dari lini ‘Toserbaku’, ini adalah perayaan sinergi dan pertumbuhan bersama antara Tuku dan jaringan mitra-toserbaku. Terjadi momen kebersamaan, apresiasi mitra usaha, dan refleksi terhadap perjalanan bisnis yang telah dilalui bersama.</p>
+      </div>
+      <div class="gallery-item">
+        <img src="Kumpul Tetangga Tuku Kecil.webp" alt="Kumpul Tetangga Tuku Kecil">
+        <h3>Kumpul Tetangga Tuku Kecil</h3>
+        <p>Dalam ‘Kumpul Tetangga Tuku Kecil’, Tuku Coffee mengajak generasi muda atau keluarga untuk turut serta dalam komunitas kopi dengan suasana yang ramah anak. Aktivitas ringan, permainan, dan kopi untuk orang tua membuat acara ini menjadi pilihan keluarga yang menyenangkan.</p>
+      </div>
+      <div class="gallery-item">
+        <img src="Jelajah Ragam..jpg" alt="Jelajah Ragam">
+        <h3>Jelajah Ragam</h3>
+        <p>Jelajah Ragam’ adalah kegiatan yang dirancang untuk mengenalkan variasi produk Tuku Coffee kepada pelanggan—mulai dari menu kopi baru, pairing makanan, hingga adaptasi rasa lokal. Kegiatan ini menciptakan ruang eksplorasi dan kebaruan dalam pengalaman menikmati kopi.</p>
+      </div>
+      </div>
+    </section>
+
+  <footer>
+    <div class="footer-social">
+    <p><strong>Jaga Ikatan Pertetanggaan!</strong></p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/tokokopituku/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com/channel/UCKiWd7KOrmQzY8vy2HTtgWg" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.linkedin.com/company/maka-id/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.tiktok.com/@tokokopituku" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+    </div>
+    <p>© 2025 Toko Kopi Tuku | UTS Amanda</p>
+    <p>Lahir karena Mimpi, Besar karena Tetangga</p>
+  </footer>
+</body>
+</html>

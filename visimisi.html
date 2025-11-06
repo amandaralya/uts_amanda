@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Kopi Tuku</title>
+    <link rel="icon" href="tuku logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="uts.js"></script>
+</head>
+<body>
+<nav>
+  <div class="nav-logo">
+      <img src="tuku logo.png" alt="Tuku Coffee Logo">
+  </div>
+
+  <div class="nav-links">
+      <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+
+      <div class="dropdown">
+        <button class="dropbtn" type="button">
+          <i class="fa-solid fa-circle-info"></i> About <i class="fa-solid fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="sejarah.html">Sejarah</a>
+          <a href="visimisi.html">Visi & Misi</a>
+          <a href="suratkabar.html">Surat Kabar Tuku</a>
+        </div>
+      </div>
+
+      <a href="menu.html"><i class="fa-solid fa-utensils"></i> Menu</a>
+      <a href="location.html"><i class="fa-solid fa-location-dot"></i> Location</a>
+      <a href="gallery.html"><i class="fa-solid fa-image"></i> Gallery</a>
+      <a href="registration.html"><i class="fa-solid fa-pen-to-square"></i> Registration</a>
+      <a href="contact.html"><i class="fa-solid fa-phone"></i> Contact</a>
+  </div>
+</nav>
+    <header id="header">
+        <h1>Toko Kopi Tuku</h1>
+        <p>"Lahir karena Mimpi, Besar karena Tetangga"</p>
+    </header>
+
+  <button-mode onclick="toggledarkmode()">Dark Mode</button-mode>
+
+  <div style="margin-left: 30px;">
+    <h2>Jakarta, Indonesia</h2>
+    <span id="Jakarta"></span>
+  </div>
+
+  <script>
+    function updatetime() {
+    let now = new Date();
+    document.getElementById("Jakarta").innerText = now.toLocaleTimeString("id-ID", {timeZone: "Asia/Jakarta"});
+    }
+    setInterval(updatetime, 1000)
+    updatetime();
+  </script>
+
+  <div class="main" id="look">
+    <h1>Visi</h1>
+    <hr>
+  <div class="foto">
+    <img src="toko tuku1.png" alt="Toko Tuku">
+    <p>“Kopi enak untuk semua orang” adalah gagasan dasar yang TUKU jaga sejak awal berdiri. Kami percaya bahwa rasa yang baik tidak harus dipagari oleh status, bukan hanya untuk mereka yang mengerti “bahasa kopi” secara teknis, dan bukan pula hanya untuk mereka yang datang dari ruang tertentu. Kopi yang enak seharusnya bisa dinikmati oleh siapa pun — oleh tetangga yang memulai hari dengan buru-buru, oleh pekerja lelah yang butuh jeda, oleh mahasiswa yang belajar semalaman, oleh siapapun yang sekadar ingin duduk sejenak dan merasa ditemani.
+        <br>
+        <br>
+        Di sini, “untuk semua orang” bukan sekadar akses harga atau pilihan menu, tapi juga tentang bagaimana TUKU menjaga rasa agar tetap jujur dan mudah diterima, tanpa membuat jarak antara mereka yang mengerti kopi secara mendalam dengan mereka yang hanya ingin menikmati kopi tanpa banyak teori. Kopi yang enak seharusnya tidak mengintimidasi — ia mengundang, merangkul, dan membuat hari terasa lebih hangat. Dan itulah yang ingin TUKU hadirkan: rasa yang bisa dirasakan, dinikmati, dan dimiliki bersama oleh siapa saja.</p>
+  </div>
+    <h1>Misi</h1>
+    <hr>
+  <div class="foto">
+    <img src="toko tuku2.png" alt="Toko Tuku">
+    <p>Misi TUKU berangkat dari keyakinan bahwa kopi enak dan berkualitas harus bisa dinikmati oleh siapa pun. Inklusif, mudah diakses, dan tidak menciptakan jarak. Semangat itu hadir lewat produk yang inovatif namun tetap membumi — seperti Es Kopi Susu Tetangga — yang sejak awal dirancang agar semua orang bisa menikmati rasa yang baik dengan harga yang wajar.
+        <br>
+        <br>
+        Di saat yang sama, TUKU terus merawat filosofi “bertetangga baik” sebagai fondasi untuk membangun hubungan dengan komunitas sekitar. Bahwa kehangatan itu terbentuk bukan dari acara besar, tetapi dari kebiasaan sehari-hari — saling menyapa, saling bantu, dan saling terlibat — yang kemudian tumbuh menjadi rasa kebersamaan yang nyata.
+        <br>
+        <br>
+        TUKU juga ingin hadir bukan hanya sebagai kedai untuk dikunjungi ketika sedang ingin kopi saja, namun menjadi bagian dari ritme hidup sehari-hari — dari pagi yang terburu-buru sampai sore yang ingin pelan. Itulah semangat #tukutiaphari — sebuah kehadiran kecil yang konsisten.
+        <br>
+        <br>
+        Dan semua ini terhubung kembali ke hulu. Melalui Beragam, TUKU mengeksplorasi kopi terbaik Indonesia dan ikut mendukung petani, termasuk petani gula aren, melalui edukasi dan peningkatan kapabilitas. Karena perjalanan rasa di gelas, nilainya hanya akan utuh kalau kembali membangun tempat rasa itu berasal: tanah, petani, dan komunitasnya.
+        <br>
+        <br>
+        Semua misi ini berjalan bersama — inklusivitas rasa, komunitas, keseharian, dan dukungan hulu — membentuk identitas TUKU yang ingin terus bertumbuh tanpa kehilangan kedekatannya.</p>
+  </div>
+    <h1>Makna Angan Karya Andanu</h1>
+    <hr>
+  <div class="foto">
+    <img src="Makna Angan Karya Andanu.webp" alt="Makna Angan Karya Andanu">
+    <p>Melalui MAKA, kita saling memahami dan berinovasi demi terciptanya ekosistem yang lebih baik untuk menghadapi masa depan, dengan terus mengembangkan karya yang bermakna dan berkelanjutan
+        <br>
+        <br>
+        Terima kasih kamu mau menjadi bagian penting dari angan besarku, semoga aku pun bisa jadi bagian dari mimpimu
+        <br>
+        <br>
+        –Andanu Prasetyo</p>
+  </div>
+    <h1>Lahir Karena Mimpi, Besar Karena Tetangga</h1>
+    <hr>
+  <div class="foto">
+    <img src="Lahir Karena Mimpi, Besar Karena Tetangga.webp" alt="Lahir Karena Mimpi, Besar Karena Tetangga">
+    <p>Arah TUKU adalah menjadi lokomotif yang menggerakkan potensi dan sumber daya Indonesia agar bisa bersaing secara global — bukan hanya melalui produk, tetapi melalui ekosistem rasa, keterlibatan manusia, dan nilai yang dibawa di dalamnya. Sambil berjalan ke arah itu, langkah yang terus TUKU pegang adalah merawat semangat gotong royong, karena dari kebersamaanlah ide tumbuh, inovasi berkembang, dan keberanian untuk bergerak bisa hidup. Bersama tetangga, bersama petani, bersama semua pihak yang terhubung dalam perjalanan ini, TUKU ingin menumbuhkan rasa bahwa kita bisa maju bukan karena bergerak sendiri, melainkan karena bergerak bersama.</p>
+  </div>
+    </div>
+
+  <footer>
+    <div class="footer-social">
+    <p><strong>Jaga Ikatan Pertetanggaan!</strong></p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/tokokopituku/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com/channel/UCKiWd7KOrmQzY8vy2HTtgWg" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.linkedin.com/company/maka-id/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.tiktok.com/@tokokopituku" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+    </div>
+    <p>© 2025 Toko Kopi Tuku | UTS Amanda</p>
+    <p>Lahir karena Mimpi, Besar karena Tetangga</p>
+  </footer>
+</body>
+</html>

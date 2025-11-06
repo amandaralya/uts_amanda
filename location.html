@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Kopi Tuku</title>
+    <link rel="icon" href="tuku logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="uts.js"></script>
+</head>
+<body>
+<nav>
+  <div class="nav-logo">
+      <img src="tuku logo.png" alt="Tuku Coffee Logo">
+  </div>
+
+  <div class="nav-links">
+      <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+
+      <div class="dropdown">
+        <button class="dropbtn" type="button">
+          <i class="fa-solid fa-circle-info"></i> About <i class="fa-solid fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="sejarah.html">Sejarah</a>
+          <a href="visimisi.html">Visi & Misi</a>
+          <a href="suratkabar.html">Surat Kabar Tuku</a>
+        </div>
+      </div>
+
+      <a href="menu.html"><i class="fa-solid fa-utensils"></i> Menu</a>
+      <a href="location.html"><i class="fa-solid fa-location-dot"></i> Location</a>
+      <a href="gallery.html"><i class="fa-solid fa-image"></i> Gallery</a>
+      <a href="registration.html"><i class="fa-solid fa-pen-to-square"></i> Registration</a>
+      <a href="contact.html"><i class="fa-solid fa-phone"></i> Contact</a>
+  </div>
+</nav>
+
+    <header id="header">
+        <h1>Toko Kopi Tuku</h1>
+        <p>"Lahir karena Mimpi, Besar karena Tetangga"</p>
+    </header>
+
+  <button-mode onclick="toggledarkmode()">Dark Mode</button-mode>
+
+  <div style="margin-left: 30px;">
+    <h2>Jakarta, Indonesia</h2>
+    <span id="Jakarta"></span>
+  </div>
+
+  <script>
+    function updatetime() {
+    let now = new Date();
+    document.getElementById("Jakarta").innerText = now.toLocaleTimeString("id-ID", {timeZone: "Asia/Jakarta"});
+    }
+    setInterval(updatetime, 1000)
+    updatetime();
+  </script>
+
+    <section class="box">
+        <h2>Find Toko Kopi Tuku Near You</h2>
+    </section>
+    
+    <section class="city">
+        <h2><i class="fa-solid fa-city"></i> Where to Find Us</h2>
+        <div class="card">
+            <h3>Toko Kopi Tuku Cinere</h3>
+            <img src="Cinere.png" alt="Toko Kopi Tuku Cinere">
+            <p>Jl. Cipete Raya Blok B No.7, RT.6/RW.3</p>
+            <a href="https://maps.app.goo.gl/2km26B7fCfBzvKeF7" target="_blank" class="maps-link">
+              <i class="fa-solid fa-map-location-dot"></i> View on Google Maps</a>
+        </div>
+        <div class="card">
+            <h3>Toko Kopi Tuku BP Serpong</h3>
+            <img src="BP Serpong.png" alt="Toko Kopi Tuku BP Serpong">
+            <p>SPBU BP Gading Serpong Jl. Soekarno Lot 1</p>
+            <a href="https://maps.app.goo.gl/YZCZyYpe4Xohxa3CA" target="_blank" class="maps-link">
+              <i class="fa-solid fa-map-location-dot"></i> View on Google Maps</a>
+        </div>
+        <div class="card">
+            <h3>Toko Kopi Tuku BP Cibubur</h3>
+            <img src="BP Cibubur.png" alt="Toko Kopi Tuku BP Cibubur">
+            <p>SPBU BP Cibubur Jl. Alternatif Cibubur No.KM. 6</p>
+            <a href="https://maps.app.goo.gl/cYMpgTRwL3AnrWjg9" target="_blank" class="maps-link">
+              <i class="fa-solid fa-map-location-dot"></i> View on Google Maps</a>
+        </div>
+        <div class="card">
+            <h3>Toko Kopi Tuku Ciledug</h3>
+            <img src="Ciledug.png" alt="Toko Kopi Tuku Ciledug">
+            <p>Jl. Pondok Surya Raya, RT.02/RW.04</p>
+            <a href="https://maps.app.goo.gl/BJxWLvMvJWD2tcQL9" target="_blank" class="maps-link">
+              <i class="fa-solid fa-map-location-dot"></i> View on Google Maps</a>
+        </div>
+        <div class="card">
+            <h3>Toko Kopi Tuku Blok M</h3>
+            <img src="Blok M.png" alt="Kopi Tuku Blok M">
+            <p>Jl. Sultan Hasanudin Dalam No.25, RT.3/RW.1</p>
+            <a href="https://maps.app.goo.gl/BMr82sJ9BqQ6p6eu8" target="_blank" class="maps-link">
+              <i class="fa-solid fa-map-location-dot"></i> View on Google Maps</a>
+        </div>
+        <div class="card">
+            <h3>Toko Kopi Tuku Kelapa Gading</h3>
+            <img src="Kelapa Gading.png" alt="Kopi Tuku Kelapa Gading">
+            <p>Jl Hibrida raya blok.QJ 9, No.33, RT.1/RW.15</p>
+            <a href="https://maps.app.goo.gl/wpq2JV2TH1rotRnX9" target="_blank" class="maps-link">
+              <i class="fa-solid fa-map-location-dot"></i> View on Google Maps</a>
+        </div>
+        <div class="card">
+            <h3>Toko Kopi Tuku Pamulang</h3>
+            <img src="Pamulang.png" alt="Kopi Tuku Pamulang">
+            <p>Jl. Pajajaran No.1, Pamulang Bar., Kec. Pamulang</p>
+            <a href="https://maps.app.goo.gl/YnnYqRuGWYvJatmX8" target="_blank" class="maps-link">
+              <i class="fa-solid fa-map-location-dot"></i> View on Google Maps</a>
+        </div>
+    </section>
+
+  <footer>
+    <div class="footer-social">
+    <p><strong>Jaga Ikatan Pertetanggaan!</strong></p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/tokokopituku/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com/channel/UCKiWd7KOrmQzY8vy2HTtgWg" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.linkedin.com/company/maka-id/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.tiktok.com/@tokokopituku" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+    </div>
+    <p>© 2025 Toko Kopi Tuku | UTS Amanda</p>
+    <p>Lahir karena Mimpi, Besar karena Tetangga</p>
+  </footer>
+</body>
+</html>

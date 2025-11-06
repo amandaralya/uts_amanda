@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Kopi Tuku</title>
+    <link rel="icon" href="tuku logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="uts.js"></script>
+</head>
+<body>
+<nav>
+  <div class="nav-logo">
+      <img src="tuku logo.png" alt="Tuku Coffee Logo">
+  </div>
+
+  <div class="nav-links">
+      <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+
+      <div class="dropdown">
+        <button class="dropbtn" type="button">
+          <i class="fa-solid fa-circle-info"></i> About <i class="fa-solid fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="sejarah.html">Sejarah</a>
+          <a href="visimisi.html">Visi & Misi</a>
+          <a href="suratkabar.html">Surat Kabar Tuku</a>
+        </div>
+      </div>
+
+      <a href="menu.html"><i class="fa-solid fa-utensils"></i> Menu</a>
+      <a href="location.html"><i class="fa-solid fa-location-dot"></i> Location</a>
+      <a href="gallery.html"><i class="fa-solid fa-image"></i> Gallery</a>
+      <a href="registration.html"><i class="fa-solid fa-pen-to-square"></i> Registration</a>
+      <a href="contact.html"><i class="fa-solid fa-phone"></i> Contact</a>
+  </div>
+</nav>
+
+    <header id="header">
+        <h1>Toko Kopi Tuku</h1>
+        <p>"Lahir karena Mimpi, Besar karena Tetangga"</p>
+    </header>
+
+  <button-mode onclick="toggledarkmode()">Dark Mode</button-mode>
+
+  <div style="margin-left: 30px;">
+    <h2>Jakarta, Indonesia</h2>
+    <span id="Jakarta"></span>
+  </div>
+
+  <script>
+    function updatetime() {
+    let now = new Date();
+    document.getElementById("Jakarta").innerText = now.toLocaleTimeString("id-ID", {timeZone: "Asia/Jakarta"});
+    }
+    setInterval(updatetime, 1000)
+    updatetime();
+  </script>
+
+    <section class="box">
+        <h2>Gabung Jadi Tetangga Tuku</h2>
+    </section>
+    
+    <form>
+        <label for="nama">Nama</label>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan nama Kamu" required>
+
+        <label for="tanggal">Tanggal Lahir</label>
+        <input type="date" id="tanggal" name="tanggal">
+
+        <label for="email">Alamat Email</label>
+        <input type="email" id="email" name="email" placeholder="amanda@email.com" required>
+
+        <label for="telepon">Nomor WhatsApp</label>
+        <input type="tel" id="telepon" name="telepon" placeholder="08xxxxxxxxxx" required>
+
+        <label for="kota">Domisili / Kota</label>
+        <input type="text" id="kota" name="kota" placeholder="Misal: Jakarta Selatan">
+
+        <label for="favorit">Minuman Favorit</label>
+        <select id="favorit" name="favorit">
+            <option value="">-- Pilih Minuman Favorit --</option>
+            <option value="Mini Kopi Susu Tetangga">Mini Kopi Susu Tetangga</option>
+            <option value="Kopi Hitam Tetangga">Kopi Hitam Tetangga</option>
+            <option value="Mocha">Mocha</option>
+            <option value="Caramel">Caramel</option>
+            <option value="Cappucino">Cappucino</option>
+            <option value="Cold Drip Santai Kelapa">Cold Drip Santai Kelapa</option>
+            <option value="Cold Drip Santai Remon">Cold Drip Santai Remon</option>
+            <option value="Chocolate">Chocolate</option>
+            <option value="Earl Grey Milk Tea">Earl Grey Milk Tea</option>
+            <option value="Teh Jawa">Teh Jawa</option>
+            <option value="S.K.M.J">S.K.M.J</option>
+            <option value="Go-Es">Go-Es</option>
+        </select>
+
+        <label for="outlet">Outlet Tuku Favorit</label>
+        <select id="outlet" name="outlet">
+            <option value="">-- Pilih Outlet Favorit --</option>
+            <option value="Cinere">Toko Kopi Tuku Cinere</option>
+            <option value="BP Serong">Toko Kopi Tuku BP Serong</option>
+            <option value="BP Cibubur">Toko Kopi Tuku Cibubur</option>
+            <option value="Ciledug">Toko Kopi Tuku Ciledug</option>
+            <option value="Blok M">Toko Kopi Tuku Blok M</option>
+            <option value="Kelapa Gading">Toko Kopi Tuku Kelapa Gading</option>
+            <option value="Pamulang">Toko Kopi Tuku Pamulang</option>
+        </select>
+
+        <label for="catatan">Catatan Tambahan</label>
+        <textarea id="catatan" name="catatan" rows="3" placeholder="Tuliskan hal lain yang ingin kamu sampaikan..."></textarea>
+
+        <input type="submit" value="Daftar Sekarang">
+    </form>
+
+  <footer>
+    <div class="footer-social">
+    <p><strong>Jaga Ikatan Pertetanggaan!</strong></p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/tokokopituku/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com/channel/UCKiWd7KOrmQzY8vy2HTtgWg" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.linkedin.com/company/maka-id/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.tiktok.com/@tokokopituku" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+    </div>
+    <p>© 2025 Toko Kopi Tuku | UTS Amanda</p>
+    <p>Lahir karena Mimpi, Besar karena Tetangga</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Kopi Tuku</title>
+    <link rel="icon" href="tuku logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="uts.js"></script>
+</head>
+<body>
+<nav>
+  <div class="nav-logo">
+      <img src="tuku logo.png" alt="Tuku Coffee Logo">
+  </div>
+
+  <div class="nav-links">
+      <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+
+      <div class="dropdown">
+        <button class="dropbtn" type="button">
+          <i class="fa-solid fa-circle-info"></i> About <i class="fa-solid fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="sejarah.html">Sejarah</a>
+          <a href="visimisi.html">Visi & Misi</a>
+          <a href="suratkabar.html">Surat Kabar Tuku</a>
+        </div>
+      </div>
+
+      <a href="menu.html"><i class="fa-solid fa-utensils"></i> Menu</a>
+      <a href="location.html"><i class="fa-solid fa-location-dot"></i> Location</a>
+      <a href="gallery.html"><i class="fa-solid fa-image"></i> Gallery</a>
+      <a href="registration.html"><i class="fa-solid fa-pen-to-square"></i> Registration</a>
+      <a href="contact.html"><i class="fa-solid fa-phone"></i> Contact</a>
+  </div>
+</nav>
+
+    <header id="header">
+        <h1>Toko Kopi Tuku</h1>
+        <p>"Lahir karena Mimpi, Besar karena Tetangga"</p>
+    </header>
+
+  <button-mode onclick="toggledarkmode()">Dark Mode</button-mode>
+
+  <div style="margin-left: 30px;">
+    <h2>Jakarta, Indonesia</h2>
+    <span id="Jakarta"></span>
+  </div>
+
+  <script>
+    function updatetime() {
+    let now = new Date();
+    document.getElementById("Jakarta").innerText = now.toLocaleTimeString("id-ID", {timeZone: "Asia/Jakarta"});
+    }
+    setInterval(updatetime, 1000)
+    updatetime();
+  </script>
+
+    <section class="box">
+        <h2>Our Menu</h2>
+    </section>
+
+      <table class="menu-table">
+      <tr>
+        <th>Menu</th>
+        <th>Description</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>
+        <div class="menu-item">
+          <img src="Mini KST.webp" alt="Mini Kopi Susu Tetangga">
+          <p>Mini Kopi Susu Tetangga</p>
+        </div>
+        </td>
+        <td>Espresso + Milk + Creamer + Arenga Sugar</td>
+        <td>Rp 15.000</td>
+      </tr>
+      <tr>
+        <td>
+        <div class="menu-item">
+          <img src="Kopi Hitam Tetangga.webp" alt="Kopi Hitam Tetangga">
+          <p>Kopi Hitam Tetangga</p>
+        </div>
+        </td>
+        <td>Espresso + Water</td>
+        <td>Rp 20.000</td>
+      </tr>
+      <tr>
+        <td>
+        <div class="menu-item">
+          <img src="Mocha.webp" alt="Mocha">
+          <p>Mocha</p>
+        </div>
+        </td>
+        <td>Espresso + Chocolate + Sugar + Milk</td>
+        <td>Rp 28.000</td>
+      </tr>
+      <tr>
+        <td>
+        <div class="menu-item">
+          <img src="Caramel.webp" alt="Caramel">
+          <p>Caramel</p>
+        </td>
+        <td>Espresso + Milk + Caramel Sauce</td>
+        <td>Rp 34.000</td>
+      </tr>
+      <tr>
+        <td>
+        <div class="menu-item">
+          <img src="Cappucino.webp" alt="Cappucino">
+          <p>Cappucino</p>
+        </div>
+        </td>
+        <td>Espresso + Coffee Shot + Milk</td>
+        <td>Rp 31.000</td>
+      </tr>
+      <tr>
+        <td>
+        <div class="menu-item">
+          <img src="Cold Drip Santai Kelapa Jeruk.webp" alt="Cold Drip Santai Kelapa Jeruk">
+          <p>Cold Drip Santai Kelapa Jeruk</p>
+        </div>
+        </td>
+        <td>Coffee Shot + Santai Series</td>
+        <td>Rp 33.000</td>
+      </tr>
+      <tr>
+        <td>
+        <div class="menu-item">
+          <img src="Cold Drip Santai Remon.webp" alt="Cold Drip Santai Remon">
+          <p>Cold Drip Santai Remon</p>
+        </div>
+        </td>
+        <td>Coffee Shot + Santai Series</td>
+        <td>Rp 33.000</td>
+      </tr>
+      <tr>
+        <td>
+        <div class="menu-item">
+          <img src="Chocolate.webp" alt="Chocolate">
+          <p>Chocolate</p>
+        </div>
+        </td>
+        <td>Chocolate + Milk + Sugar</td>
+        <td>Rp 33.000</td>
+      </tr>
+      <tr>
+        <td>
+        <div class="menu-item">
+          <img src="Earl Grey Milk Tes.webp" alt="Earl Grey Milk Tea">
+          <p>Earl Grey Milk Tea</p>
+        </div>
+        </td>
+        <td>Earl Grey Tea + Milk + Milk Tea Powder + Creamer</td>
+        <td>Rp 25.000</td>
+      </tr>
+      <tr>
+        <td>
+        <div class="menu-item">
+          <img src="Teh Jawa.webp" alt="Teh Jawa">
+          <p>Teh Jawa</p>
+        </div>
+        </td>
+        <td>Java Tea + Pandan Sugar</td>
+        <td>Rp 23.000</td>
+      </tr>
+      <tr>
+        <td>
+        <div class="menu-item">
+          <img src="S.K.M.J.webp" alt="S.K.M.J">
+          <p>S.K.M.J</p>
+        </div>
+        </td>
+        <td>Coconut Milk + Ginger + Honey + Andaliman + Arenga Sugar</td>
+        <td>Rp 20.000</td>
+      </tr>
+      <tr>
+        <td>
+        <div class="menu-item">
+          <img src="Go-Es.webp" alt="Go-Es">
+          <p>Go-Es</p>
+        </div>
+        </td>
+        <td>Coconut Water + Honey + Lime</td>
+        <td>Rp 25.000</td>
+      </tr>
+    </table>
+
+    <br>
+
+    <section class="box">
+        <h2>Tukudapan</h2>
+    </section>
+
+      <table class="menu-table">
+      <tr>
+        <th>Menu</th>
+        <th>Description</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>
+        <div class="menu-item">
+          <img src="Donat Kampoeng.webp" alt="Donat Kampoeng">
+          <p>Donat Kampoeng</p>
+        </div>
+        </td>
+        <td>Donat Kampoeng yang dibaluri gula putih</td>
+        <td>Rp 8.000</td>
+      </tr>
+      <tr>
+        <td>
+        <div class="menu-item">
+          <img src="Donat Cokelat.webp" alt="Donat Cokelat">
+          <p>Donat Cokelat</p>
+        </div>
+        </td>
+        <td>Donat lembut dengan selai dan taburan cokelat di atasnya</td>
+        <td>Rp 8.000</td>
+      </tr>
+      <tr>
+        <td>
+        <div class="menu-item">
+          <img src="Bolu Cokelat.webp" alt="Bolu Cokelat">
+          <p>Bolu Cokelat</p>
+        </div>
+        </td>
+        <td>Bolu Cokelat lembut favorit Tetangga Tuku! Cocok dinikmati bareng kopi hitam</td>
+        <td>Rp 10.000</td>
+      </tr>
+      <tr>
+        <td>
+        <div class="menu-item">
+          <img src="Bolu Wortel.webp" alt="Bolu Wortel">
+          <p>Bolu Wortel</p>
+        </td>
+        <td>Bolu Wortel yang lembut dengan cream cheese di atasnya</td>
+        <td>Rp 10.000</td>
+      </tr>
+      <tr>
+        <td>
+        <div class="menu-item">
+          <img src="Bolu Gula Aren.webp" alt="Bolu Gula Aren">
+          <p>Bolu Gula Aren</p>
+        </div>
+        </td>
+        <td>Bolu Gula Aren yang lembut dan cocok dinikmati dengan minuman favorit Tetangga Tuku!</td>
+        <td>Rp 10.000</td>
+      </tr>
+      <tr>
+        <td>
+        <div class="menu-item">
+          <img src="Martabak Cokelat Kacang.webp" alt="Martabak Cokelat Kacang">
+          <p>Martabak Cokelat Kacang</p>
+        </div>
+        </td>
+        <td>Martabak gulung mini berisi coklat dan kacang</td>
+        <td>Rp 15.000</td>
+      </tr>
+      <tr>
+        <td>
+        <div class="menu-item">
+          <img src="Martabak Keju Gula Jawa.webp" alt="Martabak Keju Gula Jawa">
+          <p>Martabak Keju Gula Jawa</p>
+        </div>
+        </td>
+        <td>Martabak gulung mini berisi keju dan gula jawa</td>
+        <td>Rp 15.000</td>
+      </tr>
+      <tr>
+        <td>
+        <div class="menu-item">
+          <img src="Lumpia Ayam.webp" alt="Lumpia Ayam">
+          <p>Lumpia Ayam</p>
+        </div>
+        </td>
+        <td>Gorengan Lumpia berisi sayuran dan ayam cincang</td>
+        <td>Rp 8.000</td>
+      </tr>
+      <tr>
+        <td>
+        <div class="menu-item">
+          <img src="Tahu Schotel.webp" alt="Tahu Schotel">
+          <p>Tahu Schotel</p>
+        </div>
+        </td>
+        <td>Gorengan tahu schotel yang dibalut dengan tepung krispi. Cocok dinikmati dengan minuman favorit Tetangga Tuku!</td>
+        <td>Rp 6.000</td>
+      </tr>
+      <tr>
+        <td>
+        <div class="menu-item">
+          <img src="Kukis Oatmeal.webp" alt="Kukis Oatmeal">
+          <p>Kukis Oatmeal</p>
+        </div>
+        </td>
+        <td>Camilan manis untuk si Tetangga Tuku Kecil! Kukis yang terbuat dari oatmeal dan cokelat</td>
+        <td>Rp 10.000</td>
+      </tr>
+      <tr>
+        <td>
+        <div class="menu-item">
+          <img src="Onigiri Cakalang.webp" alt="Onigiri Cakalang">
+          <p>Onigiri Cakalang</p>
+        </div>
+        </td>
+        <td>Onigiri khas Jepang dengan kearifan lokal! Berisi suwiran ikan cakalang pedas</td>
+        <td>Rp 15.000</td>
+      </tr>
+      <tr>
+        <td>
+        <div class="menu-item">
+          <img src="Onigiri Salmon Mayo.webp" alt="Onigiri Salmon Mayo">
+          <p>Onigiri Salmon Mayo</p>
+        </div>
+        </td>
+        <td>Onigiri khas Jepang dengan kearifan lokal! Berisi suwiran ikan salmon dan mayonnaise</td>
+        <td>Rp 15.000</td>
+      </tr>
+      <tr>
+        <td>
+        <div class="menu-item">
+          <img src="Onigiri Tuna Mayo.webp" alt="Onigiri Tuna Mayo">
+          <p>Onigiri Tuna Mayo</p>
+        </div>
+        </td>
+        <td>Onigiri khas Jepang dengan kearifan lokal! Berisi suwiran ikan tuna dan mayonnaise</td>
+        <td>Rp 15.000</td>
+      </tr>
+    </table>
+
+  <footer>
+    <div class="footer-social">
+    <p><strong>Jaga Ikatan Pertetanggaan!</strong></p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/tokokopituku/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com/channel/UCKiWd7KOrmQzY8vy2HTtgWg" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.linkedin.com/company/maka-id/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.tiktok.com/@tokokopituku" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+    </div>
+    <p>© 2025 Toko Kopi Tuku | UTS Amanda</p>
+    <p>Lahir karena Mimpi, Besar karena Tetangga</p>
+  </footer>
+</body>
+</html>
